@@ -40,16 +40,19 @@ import ContactPage from "./pages/ContactPage";
 import CoursesPage from "./pages/CoursesPage";
 import AdmissionsPage from "./pages/AdmissionsPage";
 import Home from "./pages/Home";
+import ChatbotComponent from "./components/Chatbot/ChatbotComponents";
 const App = () => {
   return (
       <Router>
         <Routes>
+          <Route path="/" element = {<Home />} />
           <Route path="/home" element = {<Home />} />
           <Route path="/aboutpage" element = {<AboutPage/>} />
           <Route path="/coursespage" element = {<CoursesPage/>} />
           <Route path="/contactpage" element = {<ContactPage/>} />
           <Route path="/admissionspage" element = {<AdmissionsPage/>} />
         </Routes>
+        <ChatbotComponent/>
       </Router>
   )
 }

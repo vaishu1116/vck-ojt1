@@ -27,14 +27,14 @@ nav{
 }
 nav h2{
     background-color: #007bff;
-    padding-right: 570px;
-    margin-left: 20px;
+    padding-right: 270px;
+    margin-left: 100px;
     color: white;
     font-size: 30px;
 }
 nav button{
     margin-left: 20px;
-    background-color: rgb(76, 192, 76);
+    background-color: rgb(101, 201, 101);
     color: white;
     font-weight: bold;
 }
