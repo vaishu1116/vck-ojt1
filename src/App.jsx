@@ -33,7 +33,7 @@
 // }
 
 // export default App
-import React from "react";
+import React, { useState } from "react";
 import { Route,BrowserRouter as Router,Routes } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
@@ -41,8 +41,27 @@ import CoursesPage from "./pages/CoursesPage";
 import AdmissionsPage from "./pages/AdmissionsPage";
 import Home from "./pages/Home";
 import ChatbotComponent from "./components/Chatbot/ChatbotComponents";
+import DeveloperInfoPopup from "./components/DeveloperInfo/DeveloperInfoPopup";
 const App = () => {
+
+  const [showPopup, setShowPopup] = useState(true);
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
   return (
+      <>
+      <div>
+        {/* Your main application content */}
+        <DeveloperInfoPopup
+          show={showPopup}
+          onClose={handleClosePopup}
+          studentName="Vaishnavi Shankar Gaikwad"
+          studentPhotoUrl="/images/Vaishnavi.jpg" // Path to their photo
+          uniqueMessage="Learned so much during this OJT! This app showcases my independent coding and deployment skills"
+        />
+      </div>
+
       <Router>
         <Routes>
           <Route path="/" element = {<Home />} />
@@ -54,6 +73,7 @@ const App = () => {
         </Routes>
         <ChatbotComponent/>
       </Router>
+      </>
   )
 }
 

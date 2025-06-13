@@ -19,6 +19,9 @@ const Home = () => {
                             </button>
                         </section>
                     </div>
+                    <nav>
+                        
+                    </nav>
                 </article>
                 <article className="info">
                     <p>**Vivekanand College is a premier educational institution dedicated to fostering academic excellence, innovation, and holistic development. Established in [Year of Establishment, e.g., 1980], we have proudly served generations of students, empowering them to achieve their full potential.</p>
