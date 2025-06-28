@@ -9,6 +9,7 @@ body {
     background-color: rgb(6, 203, 203);
     color: black;
     overflow-x: hidden;
+    
 }
 
 .other {
@@ -26,7 +27,6 @@ body {
     color: black;
     position: fixed;
     top: 0;
-    z-index: 1;
 }
 
 .content {

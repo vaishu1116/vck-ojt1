@@ -16,6 +16,7 @@ const ChatbotComponent = () => {
     useState(KNOWLEDGE_BASE_DATA);
   const [isKnowledgeBaseLoading, setIsKnowledgeBaseLoading] = useState(true);
   const isOnline = useOnlineStatus();
+  
   const [isChatOpen, setIsChatOpen] = useState(false);
   // Preparing the knowledge base data
   useEffect(() => {
